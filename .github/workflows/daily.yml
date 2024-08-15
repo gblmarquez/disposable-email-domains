@@ -20,6 +20,7 @@ jobs:
 
     - name: Download toxic domains list
       run: |
+        mkdir sources
         curl -o sources/stopforumspam_domains.txt https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
         curl -o sources/disposable_email_blocklist.txt https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/master/disposable_email_blocklist.conf
         curl -o sources/disposable_email_blocklist-2.txt https://disposable.github.io/disposable-email-domains/domains.txt
