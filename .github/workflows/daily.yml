@@ -35,8 +35,8 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git config --global user.name 'gblmarquez'
+        git config --global user.email 'gblmarquez@gmail.com'
         git add disposable_email_domains_blocklist.txt
         git commit -m 'Daily merge of disposable email sources'
         git push
